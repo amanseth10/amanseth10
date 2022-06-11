@@ -424,7 +424,7 @@
     .container footer label{
         height: 50px;
     }
-    .floating-bar{
+    #floating-bar{
         width: 80%;
         left: 10%;
     }
