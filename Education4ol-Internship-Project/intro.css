@@ -425,8 +425,8 @@
         height: 50px;
     }
     #floating-bar{
-        width: 80%;
-        left: 10%;
+        width: 90%;
+        left: 5%;
     }
     /* classess after performing some action */
     .add-class1{
