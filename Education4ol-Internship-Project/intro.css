@@ -430,7 +430,7 @@
     }
     /* classess after performing some action */
     .add-class1{
-      display: flex;
+      display: block;
     }
     .final-submit{  
         width: 60%;  
