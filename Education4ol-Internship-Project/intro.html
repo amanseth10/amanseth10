@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="intro.css">
+  <script src="./intro.js"></script>
+  <script src="https://kit.fontawesome.com/82ccdced44.js" crossorigin="anonymous"></script>
+  <title>Project</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">crowdfund</div>
+    <input type="checkbox" id="menu">
+    <label class="btn" for="menu"><i class="fa-solid fa-bars"></i></label>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Discover</a></li>
+      <li><a href="#">GetStarted</a></li>
+    </ul>
+  </nav>
+  <div class="tatoo">m</div>
+  <div class="detail">
+    <h2>Mastercraft Bamboo Monitor Riser</h2>
+    <p>A beautyfull and handcrafter monitor stand to reduce neck and eye pain</p>
+
+    <span class="ttl">
+      <div class="ttl-discrp">Back This Project</div>
+      <div class="bookmark">
+        <div class="bookmark-icon"></div>
+        <div class="bookmark-sentence">Bookmark</div>
+      </div>
+    </span>
+  </div>
+
+  <div class="part2">
+    <div>
+      <h1>$89,914</h1>
+      <p>of $100,000 backed</p>
+    </div>
+    <hr>
+    <div>
+      <h1>5,007</h1>
+      <p>total backed</p>
+    </div>
+    <hr>
+    <div>
+      <h1>56</h1>
+      <p>days left</p>
+    </div>
+  </div>
+
+  <div class="part3">
+    <b>About This Project</b>
+    <p>Mastercraft Bamboo Monitor Riser is a stundy and stylish platform that elevates your screen to more comfortable
+      viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more
+      comfortable while at woek, helping you stay focused on the task at hand </p>
+
+    <p>Featuring artisan craftmanship, the simplicity od design creates extra desk space below your computer to allow
+      notepad , pencil, and USB sticks to be stored under the stand.</p>
+
+    <div class="container" >
+      <header>
+        <div>
+
+          <b>Bamboo Stand</b>
+        </div>
+        <p>Pledge $25 and more</p>
+      </header>
+      <section>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+        you’ll be added to a special Backer member list.</section>
+      <footer class="f">
+        <h1>100<sup>left</sup> </h1>
+        <label for="check-it1" onclick="floating1()" >Select Reward</label>
+      </footer>
+    </div>
+    <div class="container" id="f1">
+      <header>
+        <div>
+
+          <b>Black Edition Stand</b>
+        </div>
+        <p>Pledge $75 or more</p>
+      </header>
+      <section>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+        member list. Shipping is included.</section>
+      <footer class="f">
+        <h1>64<sup>left</sup> </h1>
+        <label for="check-it2" onclick="floating2()">Select Reward</label>
+      </footer >
+    </div>
+    <div class="container fade">
+      <header>
+        <div>
+
+          <b>Mahogany Special Edition</b>
+        </div>
+        <p>Pledge $200 or more</p>
+      </header>
+      <section>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+        to our Backer member list. Shipping is included.</section>
+      <footer>
+        <h1>0<sup>left</sup> </h1>
+        <label for="">Select Reward</label>
+      </footer>
+    </div>
+  </div>
+  <div class="clicked">
+  </div>
+
+  <div id="floating-bar">
+    <header><b>Back this project</b>
+      <p class="x" onclick="refresh()">X</p>
+    </header>
+    <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+
+    <div id="p0" >
+      <div class="container" >
+        <header>
+          <div>
+
+            <b><input type="radio" name="a" id="radio" onclick="finalSubmit()"><label for="radio"> Pledge with no reward</label></b>
+          </div> 
+          </h1>
+        </header>
+        <section>Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to recieve product updates via email.</section>
+      </div>
+    </div>
+    <div id="p1">
+      <div class="container" id="container1">
+        <header>
+          <div>
+
+            <b><input type="radio" id="check-it1" name="a" onclick="floating1()"> <label for="check-it1"> Bamboo Stand</label></b>
+          </div>
+          <p>Pledge $25 or more</p>
+          <h1>101 <p>left</p>
+          </h1>
+        </header>
+        <section>You get an ergonomic stand of natural bamboo. You have helped us launch our promotional campaign, and you’llbe added to special Backer member list.</section>
+        <hr>
+        <footer id="foot1" class="foot1">
+          <p>Enter your pledge</p>
+          <span>$ 25</span>
+          <input type="submit" value="Continue" onclick="finalSubmit()">
+        </footer>
+      </div>
+    </div>
+    <div id="p2">
+      <div class="container" id="container2">
+        <header>
+          <div>
+
+            <b><input type="radio" id="check-it2" name="a" onclick="floating2()"><label for="check-it2"> Black Special Edition</label ></b>
+          </div>
+          <p>Pledge $75 or more</p>
+          <h1>64 <p>left</p>
+          </h1>
+        </header>
+        <section>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</section>
+        <hr>
+        <footer id="foot2" class="foot2">
+          <p>Enter your pledge</p>
+          <span>$ 75</span>
+          <input type="submit" value="Continue" onclick="finalSubmit()">
+        </footer>
+      </div>
+    </div>
+    <div id="p3">
+      <div class="container fade">
+        <header>
+          <div>
+
+            <b><input type="radio" id="check-it1" name="a"> <label for="click-it1"> Mahogany Special Edition</label></b>
+          </div>
+          <p>Pledge $200 or more</p>
+          <h1>0 <p>left</p>
+          </h1>
+        </header>
+        <section>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be
+          added to our Backer member list. Shipping is included.</section>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <div class="final-submit" id="final-submit">
+     <h1>Thank You</h1>
+     <input type="submit" value="ok" onclick="refresh()">
+  </div>
+</body>
+
+</html>

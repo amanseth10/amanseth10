@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+ 
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Raleway', sans-serif;
+ }
+ nav{
+     display: flex;
+     height: 30vh;
+     width: 100%;
+     background: url(./3.jpg);
+     justify-content: space-between;
+     padding-left: 150px;
+     padding-top: 30px;
+     padding-right: 110px;
+ }
+ .logo{
+     color: white; 
+    font-weight: bold;
+ }
+ .logo:hover{
+     cursor: pointer;
+     font-size: 103%;
+ }
+ nav ul{
+     display: flex;
+ }
+ nav ul li{
+    list-style: none;
+    
+} 
+ nav ul li a{
+     text-decoration: none;
+     color: white; 
+     margin-right: 20px;
+     padding: 4px;
+     border-radius: 5px;
+     transition: all 0.3s ease;
+ }
+ nav ul li a:hover{
+     background-color: white;
+     color: black;
+     font-size: 103%; 
+}
+.btn{
+    display: none;
+    color: white;
+    size: 50px;
+} 
+#menu{
+    display: none;
+}
+.detail{
+    width: 60vw;
+    background-color: antiquewhite;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+     margin-bottom: 20px;
+    position: relative; 
+    top: -140px;
+    z-index: 1;
+}
+.part2{
+    width: 60vw;
+    background-color: antiquewhite;
+    margin: auto; 
+    text-align: center; 
+    padding: 50px 30px; 
+     position: relative; 
+    top: -140px;
+    column-count: 3;
+    column-rule: 0.5px;
+    column-rule-style:solid;
+    margin-bottom: 20px;
+}
+
+.data{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.detail>p{
+    opacity: 0.7;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.tatoo{
+    display: flex;
+    color: azure;
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    margin: auto;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     position: relative;
+     top: -110px;
+     z-index: 2;
+}
+.ttl{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.ttl-discrp{
+    height: 40px;
+    width: 200px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    border-radius:  30px;
+}
+.bookmark{
+    display: flex;
+
+}
+.bookmark-icon{
+    height:50px ;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 2;
+}
+.bookmark-sentence{
+    height:40px ;
+    width: 150px; 
+    background-color: rgb(172, 142, 142);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    padding-left: 50px;
+    position: relative;
+    left: -40px;
+    border-radius: 30px;
+}
+.part2 hr{
+    display: none;
+}
+.part3{
+    width: 60vw;
+    background-color: antiquewhite;
+     margin: auto; 
+    position: relative; 
+    top: -140px;
+    padding: 30px 30px;
+}
+.part3>p{
+     margin-bottom: 30px;
+     margin-top: 30px;
+}
+.container{ 
+    padding: 20px;
+    border: 2px solid black;
+    border-width: 1px;
+    border-color: gray;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+ 
+.container header{
+    display:  flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.container > header > p{ 
+    color: blueviolet; 
+}
+.f{
+    display: flex;
+    justify-content: space-between;
+  
+}
+ 
+.container footer label{ 
+    display: block;
+    margin-right: 40px;
+    background:cyan;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.container section{
+    margin-bottom: 30px;
+}
+.container footer h1 sup{
+    font-size: 13px;
+    margin-left: 10px;
+}
+ .fade {
+     opacity: 0.5; 
+ }
+
+ .clicked{  
+     opacity: 0.9;
+     position: fixed; 
+     width: 100%;
+     top: 0px; 
+     height: 100%;  
+     background-color:black;
+     z-index: 3;
+     display:none;
+ }
+ #floating-bar{ 
+     position: absolute;  
+     opacity: 1;
+     width: 60%;
+     left: 20%;
+     top: 100px; 
+     background-color: white;
+     z-index: 3;
+     padding: 25px;  
+     border: 4px solid cyan;
+     border-radius: 20px;
+    background-color: antiquewhite;
+    display: none;
+ }
+ #floating-bar> header{
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 15px;
+ }
+ #floating-bar> header> p{
+     font-size: 30px;
+ }
+ #floating-bar> header> b{
+     padding-top: 10px;
+ }
+ #floating-bar>p{
+     opacity: 0.7;
+     padding-bottom: 10px;
+ }
+ .container>header>h1  {
+     display: flex;
+}
+.container > header > div > b{
+    margin-bottom: 30px;
+
+}
+.container>header>h1>p  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     font-size: 10px;
+     padding-left: 10px;
+}
+.container>footer{
+    margin-top: 20px; 
+}
+.container>footer>p{
+    padding: 10px;
+    color: gray;
+}
+.container>footer>span{
+    margin-left: 10px;
+    margin-right: 10px;
+    background:white;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border:0.5px solid gray;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.container>footer>input{
+    margin-left: 10px; 
+    display: block;
+    margin-right: 40px;
+    background:cyan;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+}
+.foot1,
+.foot2{
+    display: none;
+}
+
+.x:hover{
+  cursor: pointer;
+}
+
+/* classess after performing some action */
+.add-class1{
+   display: flex; 
+   justify-content: space-between;
+}
+.add-border{
+    border: 5px solid black;
+}
+.final-submit{
+    position: absolute;
+    height: 300px;
+    width: 40%; 
+    top: 100px;
+    left: 30%;
+    padding: auto 15px;
+    z-index: 3;
+    background-color: antiquewhite; 
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: none;
+}
+.final-submit>input{
+    height: 40px;
+    width: 100px;
+    margin-top: 30px;
+    background-color: black;
+    color:white;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+.final-submit>input:hover{
+    font-size: 15px; 
+    color: cyan;
+}
+ 
+
+ 
+
+
+
+
+@media screen and (max-width: 800px)
+{
+   .container > header > p{ 
+        color: blueviolet;
+        padding-top:20px;
+   }
+     .btn{
+         display: block; 
+     }
+     .btn:hover{
+         cursor: pointer;
+     } 
+     nav ul{
+        display: block;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-color: black;
+        height: 25vh;
+        width: 100vw;
+        text-align: center;
+        transition: all 0.2s ease;
+    }  
+    nav ul li{
+        margin: 30px 0px;
+    }
+    nav ul li a:hover{
+        background-color: black;
+        color: aqua;
+    }
+    #menu:checked ~ ul{
+       top: 70px;
+       z-index: 3;
+    }
+    .bookmark-sentence{
+        display: none;
+    }
+    .detail{
+        width: 90vw;
+    }
+    .part2{
+        width: 90vw; 
+        column-count: 1;
+
+    }
+    .part2 div{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .part2 hr{
+        display: block;
+    }
+    .part3{
+        width: 90vw;
+    }
+    .ttl-discrp{
+        flex-grow: 1;
+        margin-right: 5px;
+    }
+   
+    .container header{
+        display: block;
+    }
+    .container header > div >p{
+        margin-bottom: 10px;
+    } 
+    .container header >p{
+        margin-bottom: 10px;
+    } 
+    .f{
+        display: block;
+    }
+    .container footer h1{
+        margin-bottom: 15px;
+    }
+    .container footer label{
+        height: 50px;
+    }
+    .floating-bar{
+        width: 80%;
+        left: 10%;
+    }
+    /* classess after performing some action */
+    .add-class1{
+      display: flex;
+    }
+    .final-submit{  
+        width: 60%;  
+        left: 20%; 
+    }
+}
